@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+   <ul id="l1">
+    <li id="item">Zara</li>
+</ul>
+<ul id="l2"></ul>
+<script>
+    const item = document.getElementById("item");
+    const l1 = document.getElementById("l1");
+    const l2 = document.getElementById("l2");
+    const removed = l1.removeChild(item);
+    l2.appendChild(removed);
+</script>
+</body>
+</html>

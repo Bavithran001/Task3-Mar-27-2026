@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <div id="box">
+    <p>!st Child</p>
+    <p>2nd Child</p>
+    </div>
+    <button onclick="removeLast()">Remove Last</button>
+<script>
+    function removeLast() {
+        const abc=document.getElementById("box");
+        if (abc.lastChild) {
+            abc.removeChild(abc.lastChild);
+        }   
+    }
+</script>
+</body>
+</html>

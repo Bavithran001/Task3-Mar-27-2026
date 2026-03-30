@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <div id="container">
+    <p>Paragraph</p>
+</div>
+<script>
+    const span = document.createElement("span");
+    span.textContent = "New!";
+    const container = document.getElementById("container");
+    const p = container.querySelector("p");
+    container.insertBefore(span,p);
+</script>
+        
+</body>
+</html>
